@@ -17,3 +17,17 @@ build/
 .vscode/
 .idea/
 *.swp
+# Analysis runtime data
+analyses/
+
+#Uploaded videos
+uploads/
+*.mp4
+*.avi
+*.mkv
+
+# Runtime databases and logs
+*.db
+*.db-wal
+*.db-shm
+*.log
