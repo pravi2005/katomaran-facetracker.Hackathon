@@ -1,3 +1,9 @@
+## Demo Video
+
+The following video demonstrates the complete Katomaran Face Tracking and Recognition System, including video analysis, face detection, tracking, recognition, ENTRY/EXIT detection, and dashboard results.
+
+[▶️ Watch the Demo Video](https://youtu.be/UahleObIkRc)
+
 # Katomaran Face Intelligence & Visitor Analytics
 
 An AI-powered face detection, tracking, recognition, and visitor analytics system with a web dashboard for processing video footage.
