@@ -1,0 +1,56 @@
+{
+    "input": {
+        "source": "sample_video.mp4",
+        "source_type": "video",
+        "reconnect_max_attempts": 10,
+        "reconnect_delay_seconds": 2.0,
+        "read_timeout_seconds": 10.0
+    },
+    "detection": {
+        "model": "models/yolov8n-face.pt",
+        "confidence_threshold": 0.5,
+        "skip_frames": 4,
+        "device": "auto",
+        "image_size": 640
+    },
+    "recognition": {
+        "model_pack": "buffalo_l",
+        "similarity_threshold": 0.45,
+        "embeddings_per_decision": 3,
+        "max_resolve_attempts": 12
+    },
+    "quality": {
+        "min_face_size_px": 48,
+        "blur_threshold": 30.0,
+        "min_detection_confidence": 0.6,
+        "reject_edge_touching": true,
+        "edge_margin_px": 2
+    },
+    "tracking": {
+        "max_missing_seconds": 2.0,
+        "low_confidence_threshold": 0.2,
+        "match_iou_threshold": 0.3,
+        "low_match_iou_threshold": 0.5,
+        "track_buffer_seconds": 2.0
+    },
+    "database": {
+        "path": "data/faces.db"
+    },
+    "logging": {
+        "file": "logs/events.log",
+        "level": "INFO",
+        "console": true
+    },
+    "storage": {
+        "root": "logs",
+        "jpeg_quality": 90,
+        "crop_padding_ratio": 0.25
+    },
+    "display": {
+        "enabled": true,
+        "window_name": "Katomaran Face Tracker"
+    },
+    "counting": {
+        "scope": "all_time"
+    }
+}

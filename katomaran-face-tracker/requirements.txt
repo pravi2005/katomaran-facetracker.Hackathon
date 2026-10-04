@@ -1,0 +1,11 @@
+# Runtime dependencies. Version ranges are conservative lower bounds.
+# NOT VERIFIED: full installation on your machine (see docs/TROUBLESHOOTING.md).
+
+numpy>=1.23,<2.0          # insightface wheels are commonly built against numpy 1.x
+opencv-python>=4.8,<4.12  # use opencv-python (NOT -headless) if you want the preview window
+ultralytics>=8.1          # YOLO inference (pulls in PyTorch)
+insightface>=0.7.3        # ArcFace recognition models (source-only on PyPI; see troubleshooting)
+
+# ONNX Runtime: install exactly ONE of the two lines below, never both.
+onnxruntime>=1.16         # CPU
+# onnxruntime-gpu>=1.16   # NVIDIA GPU (needs matching CUDA/cuDNN)

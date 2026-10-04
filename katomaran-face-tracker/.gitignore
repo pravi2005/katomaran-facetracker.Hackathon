@@ -1,0 +1,29 @@
+# --- privacy: face data must never be committed ---
+data/*.db
+data/*.db-wal
+data/*.db-shm
+logs/*
+!logs/.gitkeep
+*.log
+*.jpg
+*.jpeg
+*.png
+
+# --- secrets ---
+.env
+*.env
+
+# --- models and videos (large / licensed separately) ---
+models/*.pt
+models/*.onnx
+*.mp4
+*.avi
+*.mkv
+
+# --- python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
